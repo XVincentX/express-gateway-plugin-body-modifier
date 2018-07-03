@@ -1,0 +1,34 @@
+http:
+  port: 8080
+serviceEndpoints:
+  backend:
+    url: http://localhost:5678
+apiEndpoints:
+  authorizedEndpoint:
+    host: "*"
+policies:
+- body-modifier
+- proxy
+pipelines:
+  pipeline1:
+    apiEndpoints:
+    - authorizedEndpoint
+    policies:
+    - body-modifier:
+        action:
+          request:
+            add:
+            - name: fullname
+              value: req.body.name + ' ' + req.body.surname
+            remove:
+            - name
+            - surname
+          response:
+            add:
+            - name: createdBy
+              value: "'Clark Kent'"
+            remove:
+            - uselessParam
+    - proxy:
+      - action:
+          serviceEndpoint: backend

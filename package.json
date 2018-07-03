@@ -1,0 +1,32 @@
+{
+  "name": "express-gateway-plugin-body-modifier",
+  "version": "0.0.0-development",
+  "description": "A body modifier plugin for Express Gateway",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=node",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XVincentX/express-gateway-plugin-body-modifier.git"
+  },
+  "keywords": [
+    "express-gateway",
+    "plugin",
+    "body",
+    "modifier"
+  ],
+  "author": "Vincenzo Chianese <vincenzo@express-gateway.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XVincentX/express-gateway-plugin-body-modifier/issues"
+  },
+  "homepage": "https://github.com/XVincentX/express-gateway-plugin-body-modifier#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "express-gateway": "^1.10.1",
+    "jest": "^23.2.0",
+    "semantic-release": "^15.6.3"
+  }
+}
