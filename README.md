@@ -38,7 +38,7 @@ policies:
         response:
           add:
           - name: createdBy
-            value: "'Clark Kent'"
+            value: res.body.fullname
           remove:
           - uselessParam
 ```

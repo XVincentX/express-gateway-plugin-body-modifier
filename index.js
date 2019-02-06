@@ -68,6 +68,7 @@ const plugin = {
                 const _write = res.write;
                 res.write = (data) => {
                   try {
+                    res.body = JSON.parse(data);
                     const body = transformBody(params.response, req.egContext, JSON.parse(data));
                     const bodyData = JSON.stringify(body);
 
