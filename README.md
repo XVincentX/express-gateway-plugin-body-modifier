@@ -1,5 +1,11 @@
 # express-gateway-plugin-body-modifier
 
+## Warn
+
+This policy has been modified and it's not included in Express Gateway core. Check that out!
+
+## Introduction
+
 This plugin for [Express Gateway](https://express-gateway.io) makes it possible rewrite request and response body before
 these get proxied to the target `serviceEndpoint` or returned back to the client
 
