@@ -78,9 +78,9 @@ const plugin = {
                   }
                 };
               }
-              next();
             });
           });
+          next();
         };
       }
     });
